@@ -9,14 +9,26 @@ function getFormData(): void {
 
   const interests = document.getElementById("interest-select") as HTMLSelectElement;
   console.info({ interests: interests.selectedOptions });
+  console.info({ interests: interests });
+  let interestsHtmlCollection = interests.selectedOptions;
+  let commaSeparatedInterests = "";
+  if (interestsHtmlCollection.length > 0) {
+    for (let i = 0; i < interestsHtmlCollection.length; i++) {
+      if (commaSeparatedInterests.trim() !== "") {
+        commaSeparatedInterests += ",";
+      }
+      commaSeparatedInterests += interestsHtmlCollection[i].value;
+    }
+  }
 
   const frequency = document.getElementById("frequency-select") as HTMLSelectElement;
-  console.info({ frequency: frequency.selectedOptions });
+  console.info({ frequency: frequency.value });
 
-  // Build formData object.
-  let formData = new FormData();
+  const formData = new FormData();
   formData.append('email', email?.value);
-  formData.append('password', 'John123');
+  formData.append('interests', commaSeparatedInterests);
+  formData.append('frequency', frequency.value);
+  console.info({ formData });
 
   fetch("api/marketing-preference",
     {
