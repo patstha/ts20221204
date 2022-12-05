@@ -30,11 +30,14 @@ function getFormData(): void {
   formData.append('frequency', frequency.value);
   console.info({ formData });
 
-  fetch("api/marketing-preference",
+  const response = fetch("api/marketing-preference",
     {
       body: formData,
       method: "post"
     });
+  console.info({ response });
+  const marketingFormValueParagraphElement = document.getElementById("marketing-form-value") as HTMLPreElement;
+  marketingFormValueParagraphElement.innerHTML = JSON.stringify(Object.fromEntries(formData.entries()));
 }
 
 const submitButton = document.getElementById("marketing-preference-submit") as HTMLButtonElement;
