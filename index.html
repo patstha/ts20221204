@@ -9,8 +9,8 @@
 </head>
 
 <body>
-  <div id="marketing-preference-form">
-    <form method="post" action="/api/marketing-preference">
+  <div id="marketing-preference">
+    <form id="marketing-preference-form">
       <div class="form-element">
         <label for="email">Enter your email: </label>
         <input type="email" name="email" id="email" required>
@@ -25,7 +25,19 @@
           <option value="date">Date</option>
         </select>
       </div>
-      <button type="submit">Submit</button>
+      <div class="form-element">
+        <label for="frequency">How often would you like to hear from us?</label>
+        <select name="frequencies" name="frequency" id="frequency-select">
+          <option value="">-- Please choose an option --</option>
+          <option value="avocado">Daily</option>
+          <option value="banana">Weekly</option>
+          <option value="carrot">Monthly</option>
+          <option value="date">Quarterly</option>
+          <option value="date">Annually</option>
+          <option value="date">Not right now</option>
+        </select>
+      </div>
+      <button type="button" id="marketing-preference-submit">Submit</button>
     </form>
   </div>
   <script type="module" src="/src/main.ts" defer></script>
