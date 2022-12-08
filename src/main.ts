@@ -7,6 +7,9 @@ function getFormData(): void {
   const email = document.getElementById("email") as HTMLInputElement;
   console.info({ email: email.value });
 
+  const Firstname = document.getElementById("Firstname") as HTMLInputElement;
+  const Lastname = document.getElementById("Lastname") as HTMLInputElement;
+
   const interests = document.getElementById("interest-select") as HTMLSelectElement;
   console.info({ interests: interests.selectedOptions });
   console.info({ interests: interests });
@@ -26,6 +29,8 @@ function getFormData(): void {
 
   const formData = new FormData();
   formData.append('email', email?.value);
+  formData.append('Firstname', Firstname?.value);
+  formData.append('Lastname', Lastname?.value);
   formData.append('interests', commaSeparatedInterests);
   formData.append('frequency', frequency.value);
   console.info({ formData });
