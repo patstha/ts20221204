@@ -7,7 +7,7 @@ git add .;
 git commit -m "add timestamp";
 
 echo ''  >> README.markdown 2>&1;
-echo '# Angular Fifteen'  >> README.markdown 2>&1;
+echo '# vite Fifteen'  >> README.markdown 2>&1;
 echo ''  >> README.markdown 2>&1;
 
 echo ''  >> README.markdown 2>&1;
@@ -37,7 +37,7 @@ git commit -m "begin update node";
 source ~/.nvm/nvm.sh;
 time nvm install --lts;
 time nvm use --lts;
-time npm install --global @angular/cli yarn;
+time npm install --global @vite/cli yarn;
 time yarn run ng version  >> README.markdown 2>&1;
 time yarn  >> README.markdown 2>&1;
 echo "\`\`\`"  >> README.markdown 2>&1;
@@ -45,20 +45,11 @@ ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
 git commit -m "end update node";
 
-export NODE_OPTIONS="--max-old-space-size=8000";
-
 git add .;
 git commit -m "begin yarn";
 time yarn;
 git add .;
 git commit -m "end yarn";
-
-git add .;
-git commit -m "begin prepare to update angular";
-time yarn run ng update @angular/core @angular/cli @angular/material @angular/localize;
-git add .;
-git commit -m "end prepare to update angular";
-time npx browserslist --update-db >> README.markdown 2>&1;
 
 echo "\`\`\`bash" >> README.markdown 2>&1;
 time npx browserslist --update-db >> README.markdown 2>&1;
@@ -67,21 +58,21 @@ echo "\`\`\`" >> README.markdown 2>&1;
 echo "\`\`\`bash"  >> README.markdown 2>&1;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
-git commit -m "begin prepare to build angular";
-time yarn run ng build --configuration production --output-path docs --output-hashing none --stats-json true --subresource-integrity true --verbose true  >> README.markdown 2>&1;
+git commit -m "begin prepare to build vite";
+time yarn run build >> README.markdown 2>&1;
 echo "\`\`\`"  >> README.markdown 2>&1;
 git add .;
-git commit -m "end prepare to build angular";
+git commit -m "end prepare to build vite";
 
 echo "\`\`\`bash" > locallog/fedoratest.md 2>&1;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
-git commit -m "begin prepare to unit test angular";
-time yarn run ng test --karma-config karma.conf.js >> locallog/fedoratest.md 2>&1;
+git commit -m "begin prepare to unit test vite";
+time yarn run test >> locallog/fedoratest.md 2>&1;
 echo "\`\`\`" >> locallog/fedoratest.md 2>&1;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
-git commit -m "end prepare to unit test angular";
+git commit -m "end prepare to unit test vite";
 
 date  >> README.markdown 2>&1;
 ping -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
