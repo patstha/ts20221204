@@ -14,15 +14,7 @@ function getFormData(): void {
   console.info({ interests: interests.selectedOptions });
   console.info({ interests: interests });
   let interestsHtmlCollection = interests.selectedOptions;
-  let commaSeparatedInterests = "";
-  if (interestsHtmlCollection.length > 0) {
-    for (let i = 0; i < interestsHtmlCollection.length; i++) {
-      if (commaSeparatedInterests.trim() !== "") {
-        commaSeparatedInterests += ",";
-      }
-      commaSeparatedInterests += interestsHtmlCollection[i].value;
-    }
-  }
+  let commaSeparatedInterests = extractOptions(interestsHtmlCollection);
 
   const frequency = document.getElementById("frequency-select") as HTMLSelectElement;
   console.info({ frequency: frequency.value });
@@ -48,6 +40,19 @@ function getFormData(): void {
 const submitButton = document.getElementById("marketing-preference-submit") as HTMLButtonElement;
 if (submitButton) {
   submitButton.addEventListener("click", getFormData);
+}
+
+export function extractOptions(interestsHtmlCollection: HTMLCollectionOf<HTMLOptionElement>): string {
+  let commaSeparatedInterests = "";
+  if (interestsHtmlCollection.length > 0) {
+    for (let i = 0; i < interestsHtmlCollection.length; i++) {
+      if (commaSeparatedInterests.trim() !== "") {
+        commaSeparatedInterests += ",";
+      }
+      commaSeparatedInterests += interestsHtmlCollection[i].value;
+    }
+  }
+  return commaSeparatedInterests;
 }
 
 export function addToNumbers(a: number, b: number): number {
