@@ -51,10 +51,6 @@ time yarn;
 git add .;
 git commit -m "end yarn";
 
-echo "\`\`\`bash" >> README.markdown 2>&1;
-time npx browserslist --update-db >> README.markdown 2>&1;
-echo "\`\`\`" >> README.markdown 2>&1;
-
 echo "\`\`\`bash"  >> README.markdown 2>&1;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
