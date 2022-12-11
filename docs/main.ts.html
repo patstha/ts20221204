@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.72% </span>
+                <span class="strong">15% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>7/55</span>
+                <span class='fraction'>9/60</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">66.66% </span>
+                <span class="strong">40% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/3</span>
+                <span class='fraction'>2/5</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">12.72% </span>
+                <span class="strong">15% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>7/55</span>
+                <span class='fraction'>9/60</span>
             </div>
         
             
@@ -118,16 +118,13 @@
 <a name='L53'></a><a href='#L53'>53</a>
 <a name='L54'></a><a href='#L54'>54</a>
 <a name='L55'></a><a href='#L55'>55</a>
-<a name='L56'></a><a href='#L56'>56</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<a name='L56'></a><a href='#L56'>56</a>
+<a name='L57'></a><a href='#L57'>57</a>
+<a name='L58'></a><a href='#L58'>58</a>
+<a name='L59'></a><a href='#L59'>59</a>
+<a name='L60'></a><a href='#L60'>60</a>
+<a name='L61'></a><a href='#L61'>61</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -170,6 +167,19 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-yes">1x</span>
@@ -189,15 +199,7 @@
 <span class="cstat-no" title="statement not covered" >  console.info({ interests: interests.selectedOptions });</span>
 <span class="cstat-no" title="statement not covered" >  console.info({ interests: interests });</span>
 <span class="cstat-no" title="statement not covered" >  let interestsHtmlCollection = interests.selectedOptions;</span>
-<span class="cstat-no" title="statement not covered" >  let commaSeparatedInterests = "";</span>
-<span class="cstat-no" title="statement not covered" >  if (interestsHtmlCollection.length &gt; 0) {</span>
-<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; interestsHtmlCollection.length; i++) {</span>
-<span class="cstat-no" title="statement not covered" >      if (commaSeparatedInterests.trim() !== "") {</span>
-<span class="cstat-no" title="statement not covered" >        commaSeparatedInterests += ",";</span>
-<span class="cstat-no" title="statement not covered" >      }</span>
-<span class="cstat-no" title="statement not covered" >      commaSeparatedInterests += interestsHtmlCollection[i].value;</span>
-<span class="cstat-no" title="statement not covered" >    }</span>
-<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  let commaSeparatedInterests = extractOptions(interestsHtmlCollection);</span>
 <span class="cstat-no" title="statement not covered" ></span>
 <span class="cstat-no" title="statement not covered" >  const frequency = document.getElementById("frequency-select") as HTMLSelectElement;</span>
 <span class="cstat-no" title="statement not covered" >  console.info({ frequency: frequency.value });</span>
@@ -225,6 +227,19 @@ if (submitButton) <span class="branch-0 cbranch-no" title="branch not covered" >
 <span class="cstat-no" title="statement not covered" >  submitButton.addEventListener("click", getFormData);</span>
 <span class="cstat-no" title="statement not covered" >}</span>
 <span class="cstat-no" title="statement not covered" ></span>
+export <span class="fstat-no" title="function not covered" >function extractOptions(interestsHtmlCollection: HTMLCollectionOf&lt;HTMLOptionElement&gt;): string {</span>
+<span class="cstat-no" title="statement not covered" >  let commaSeparatedInterests = "";</span>
+<span class="cstat-no" title="statement not covered" >  if (interestsHtmlCollection.length &gt; 0) {</span>
+<span class="cstat-no" title="statement not covered" >    for (let i = 0; i &lt; interestsHtmlCollection.length; i++) {</span>
+<span class="cstat-no" title="statement not covered" >      if (commaSeparatedInterests.trim() !== "") {</span>
+<span class="cstat-no" title="statement not covered" >        commaSeparatedInterests += ",";</span>
+<span class="cstat-no" title="statement not covered" >      }</span>
+<span class="cstat-no" title="statement not covered" >      commaSeparatedInterests += interestsHtmlCollection[i].value;</span>
+<span class="cstat-no" title="statement not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" >  }</span>
+<span class="cstat-no" title="statement not covered" >  return commaSeparatedInterests;</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >}</span></span>
+&nbsp;
 export function addToNumbers(a: number, b: number): number {
   return a + b;
 }
@@ -235,7 +250,7 @@ export function addToNumbers(a: number, b: number): number {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2022-12-11T03:16:41.129Z
+                at 2022-12-11T03:22:27.777Z
             </div>
         <script src="prettify.js"></script>
         <script>
