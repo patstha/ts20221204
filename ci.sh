@@ -70,6 +70,19 @@ ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 git add .;
 git commit -m "end prepare to unit test vite";
 
+echo "\`\`\`bash" > locallog/fedoratest.md 2>&1;
+time rm -rf public/coverage >> locallog/fedoratest.md 2>&1;
+git add .;
+git commit -m "delete previous coverage in public folder";
+time cp -r coverage public/ >> locallog/fedoratest.md 2>&1;
+git add .;
+git commit -m "copy coverage to public folder";
+time yarn run test >> locallog/fedoratest.md 2>&1;
+echo "\`\`\`" >> locallog/fedoratest.md 2>&1;
+ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
+git add .;
+git commit -m "end copy coverage to public folder";
+
 date  >> README.markdown 2>&1;
 ping -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
 time yarn version --patch  >> README.markdown 2>&1;
