@@ -30,3 +30,8 @@ api/hello-types.ts(1,42): error TS7006: Parameter 'response' implicitly has an '
 error Command failed with exit code 2.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+Sat Dec 10 09:41:57 PM EST 2022
+yarn version v1.22.19
+info Current version: 0.0.25
+info New version: 0.0.26
+Done in 0.27s.
