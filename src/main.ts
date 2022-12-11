@@ -54,7 +54,3 @@ export function extractOptions(interestsHtmlCollection: HTMLCollectionOf<HTMLOpt
   }
   return commaSeparatedInterests;
 }
-
-export function addToNumbers(a: number, b: number): number {
-  return a + b;
-}
