@@ -23,3 +23,10 @@ success Already up-to-date.
 Done in 0.11s.
 ```
 ```bash
+yarn run v1.22.19
+$ tsc && vite build
+api/hello-types.ts(1,33): error TS7006: Parameter 'request' implicitly has an 'any' type.
+api/hello-types.ts(1,42): error TS7006: Parameter 'response' implicitly has an 'any' type.
+error Command failed with exit code 2.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
