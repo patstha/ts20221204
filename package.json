@@ -6,10 +6,14 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "vitest --run --coverage --dom >> test.txt  2>&1"
   },
   "devDependencies": {
+    "@vitest/coverage-c8": "^0.25.7",
+    "happy-dom": "^8.1.0",
     "typescript": "^4.9",
-    "vite": "^3.2.3"
+    "vite": "^3.2.3",
+    "vitest": "^0.25.7"
   }
 }

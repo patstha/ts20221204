@@ -49,3 +49,7 @@ const submitButton = document.getElementById("marketing-preference-submit") as H
 if (submitButton) {
   submitButton.addEventListener("click", getFormData);
 }
+
+export function addToNumbers(a: number, b: number): number {
+  return a + b;
+}
