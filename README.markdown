@@ -23,3 +23,14 @@ success Already up-to-date.
 Done in 0.11s.
 ```
 ```bash
+yarn run v1.22.19
+$ tsc && vite build
+vite v3.2.4 building for production...
+transforming...
+✓ 4 modules transformed.
+rendering chunks...
+dist/index.html                  4.18 KiB
+dist/assets/index.67532ade.js    1.82 KiB / gzip: 0.79 KiB
+dist/assets/index.7f906a06.css   1.20 KiB / gzip: 0.63 KiB
+Done in 1.58s.
+```
