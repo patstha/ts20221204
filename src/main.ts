@@ -1,4 +1,5 @@
 import './style.css'
+import './select.css'
 
 function getFormData(): void {
   const marketingPreferenceForm = document.getElementById("marketing-preference-form") as HTMLFormElement;
@@ -7,8 +8,8 @@ function getFormData(): void {
   const email = document.getElementById("email") as HTMLInputElement;
   console.info({ email: email.value });
 
-  const Firstname = document.getElementById("Firstname") as HTMLInputElement;
-  const Lastname = document.getElementById("Lastname") as HTMLInputElement;
+  const firstName = document.getElementById("Firstname") as HTMLInputElement;
+  const lastName = document.getElementById("Lastname") as HTMLInputElement;
 
   const interests = document.getElementById("interest-select") as HTMLSelectElement;
   console.info({ interests: interests.selectedOptions });
@@ -21,8 +22,8 @@ function getFormData(): void {
 
   const formData = new FormData();
   formData.append('email', email?.value);
-  formData.append('Firstname', Firstname?.value);
-  formData.append('Lastname', Lastname?.value);
+  formData.append('Firstname', firstName?.value);
+  formData.append('Lastname', lastName?.value);
   formData.append('interests', commaSeparatedInterests);
   formData.append('frequency', frequency.value);
   console.info({ formData });
