@@ -1,5 +1,6 @@
 import './style.css'
 import './select.css'
+import './pratikchhya.css'
 
 function getFormData(): void {
   const marketingPreferenceForm = document.getElementById("marketing-preference-form") as HTMLFormElement;
