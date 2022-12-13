@@ -36,7 +36,7 @@ function getFormData(): void {
     });
   console.info({ response });
   const marketingFormValueParagraphElement = document.getElementById("marketing-form-value") as HTMLPreElement;
-  marketingFormValueParagraphElement.innerHTML = JSON.stringify(Object.fromEntries(formData.entries()));
+  marketingFormValueParagraphElement.innerHTML = JSON.stringify(Object.fromEntries(formData.entries()), undefined, 2);
 }
 
 const submitButton = document.getElementById("marketing-preference-submit") as HTMLButtonElement;
@@ -49,7 +49,7 @@ export function extractOptions(interestsHtmlCollection: HTMLCollectionOf<HTMLOpt
   if (interestsHtmlCollection.length > 0) {
     for (let i = 0; i < interestsHtmlCollection.length; i++) {
       if (commaSeparatedInterests.trim() !== "") {
-        commaSeparatedInterests += ",";
+        commaSeparatedInterests += ", ";
       }
       commaSeparatedInterests += interestsHtmlCollection[i].value;
     }

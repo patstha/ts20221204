@@ -8,3 +8,4 @@ describe('extractOptions should return correct string', () => {
     expect(extractOptions(interestsHtmlCollection), "should return empty string").toEqual("");
   })
 })
+                                                                        
