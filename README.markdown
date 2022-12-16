@@ -6,3 +6,9 @@ Fri Dec 16 08:25:44 AM EST 2022
 This project is live at [https://marketingpreference.vercel.app/](https://marketingpreference.vercel.app/) thanks to Vercel.
 
 ```bash
+System Memory
+               total        used        free      shared  buff/cache   available
+Mem:            15Gi       6.0Gi       1.8Gi       932Mi       7.5Gi       8.0Gi
+Swap:          8.0Gi       2.3Gi       5.7Gi
+System Storage
+215M	.
