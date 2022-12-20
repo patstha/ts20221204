@@ -34,3 +34,8 @@ dist/assets/index.e0331175.js    1.83 KiB / gzip: 0.80 KiB
 dist/assets/index.888e1f2d.css   2.46 KiB / gzip: 1.10 KiB
 Done in 1.46s.
 ```
+Mon Dec 19 09:13:31 PM EST 2022
+yarn version v1.22.19
+info Current version: 0.0.98
+info New version: 0.0.99
+Done in 0.13s.
