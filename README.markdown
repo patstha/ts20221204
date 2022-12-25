@@ -14,3 +14,11 @@ System Storage
 279M	.
 ```
 ```bash
+yarn run v1.22.19
+error Command "ng" not found.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+yarn install v1.22.19
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.09s.
+```
