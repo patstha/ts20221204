@@ -11,6 +11,9 @@ video.addEventListener('play', (event: Event) => {
 
 function handleEvent(event: Event) {
     eventLog.innerHTML += `${event.timeStamp} - ${event.type}\n`;
+    if (event.target instanceof HTMLVideoElement) {
+        ${event.target?.currentSrc}
+    }
     console.info({ event });
 }
 

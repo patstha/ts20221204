@@ -29,3 +29,8 @@ src/cloudinary.ts(13,81): error TS2339: Property 'currentSrc' does not exist on 
 error Command failed with exit code 2.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
 ```
+Tue Dec 27 02:36:39 PM EST 2022
+yarn version v1.22.19
+info Current version: 0.0.146
+info New version: 0.0.147
+Done in 0.13s.
