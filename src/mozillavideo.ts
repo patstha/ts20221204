@@ -80,6 +80,7 @@ if (supportsVideo) {
     }
 
     fullscreen.addEventListener('click', (e) => {
+        console.info({ e });
         handleFullscreen();
     });
 
@@ -101,6 +102,7 @@ if (supportsVideo) {
     }
 
     document.addEventListener('fullscreenchange', (e) => {
+        console.info({ e });
         setFullscreenData(!!document.fullscreenElement);
     });
 
