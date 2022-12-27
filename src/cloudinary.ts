@@ -10,7 +10,7 @@ video.addEventListener('play', (event: Event) => {
 });
 
 function handleEvent(event: Event) {
-    eventLog.innerHTML += `${event.timeStamp} - ${event.type} - ${event.target?.currentSrc}\n`;
+    eventLog.innerHTML += `${event.timeStamp} - ${event.type} - \n`;
     console.info({ event });
 }
 

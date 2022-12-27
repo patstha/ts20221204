@@ -23,3 +23,9 @@ success Already up-to-date.
 Done in 0.13s.
 ```
 ```bash
+yarn run v1.22.19
+$ tsc && vite build
+src/cloudinary.ts(13,81): error TS2339: Property 'currentSrc' does not exist on type 'EventTarget'.
+error Command failed with exit code 2.
+info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
+```
