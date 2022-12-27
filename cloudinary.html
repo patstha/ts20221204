@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cloudinary Testing</title>
+    <!-- Google Tag Manager -->
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K99CXHH');</script>
+    <!-- End Google Tag Manager -->
+</head>
+
+<body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K99CXHH" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <video poster="https://res.cloudinary.com/kus/image/upload/v1655803703/4K_Brooklyn_Bridge_sosjwz.png"
+        class="css-14ogxpa" playsinline="" preload="none" muted="true" controls
+        src="https://res.cloudinary.com/kus/video/upload/v1671098929/perfectly_packaged.mov"
+        id="cloudinary-video-sample"></video>
+    <div class="event-log">
+        <label for="eventLog">Event log:</label>
+        <pre readonly class="event-log-contents" id="eventLog"></pre>
+    </div>
+    <script type="module" src="/src/cloudinary.ts" defer></script>
+</body>
+
+</html>
