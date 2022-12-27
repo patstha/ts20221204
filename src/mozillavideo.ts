@@ -107,4 +107,6 @@ if (supportsVideo) {
     });
 
 
+} else {
+    alert("you are likely in possession of illegal and/or outdated software");
 }
