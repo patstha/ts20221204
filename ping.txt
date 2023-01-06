@@ -192,3 +192,30 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 20 packets transmitted, 20 received, 0% packet loss, time 296ms
 rtt min/avg/max/mdev = 12.281/14.127/18.050/1.693 ms, pipe 2, ipg/ewma 15.571/13.945 ms
+ping: sock4.fd: 3 (socktype: SOCK_DGRAM), sock6.fd: 4 (socktype: SOCK_DGRAM), hints.ai_family: AF_UNSPEC
+
+ai->ai_family: AF_INET, ai->ai_canonname: '8.8.8.8'
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+[1673035568.149134] 64 bytes from 8.8.8.8: icmp_seq=1 ttl=116 time=14.4 ms
+[1673035569.152050] 64 bytes from 8.8.8.8: icmp_seq=2 ttl=116 time=16.1 ms
+[1673035570.154553] 64 bytes from 8.8.8.8: icmp_seq=3 ttl=116 time=17.3 ms
+[1673035571.154213] 64 bytes from 8.8.8.8: icmp_seq=4 ttl=116 time=16.3 ms
+[1673035572.152268] 64 bytes from 8.8.8.8: icmp_seq=5 ttl=116 time=12.8 ms
+[1673035573.155981] 64 bytes from 8.8.8.8: icmp_seq=6 ttl=116 time=14.9 ms
+[1673035574.155357] 64 bytes from 8.8.8.8: icmp_seq=7 ttl=116 time=13.3 ms
+[1673035575.159458] 64 bytes from 8.8.8.8: icmp_seq=8 ttl=116 time=15.5 ms
+[1673035576.162384] 64 bytes from 8.8.8.8: icmp_seq=9 ttl=116 time=17.2 ms
+[1673035577.165863] 64 bytes from 8.8.8.8: icmp_seq=10 ttl=116 time=19.0 ms
+[1673035578.163133] 64 bytes from 8.8.8.8: icmp_seq=11 ttl=116 time=14.9 ms
+[1673035579.163940] 64 bytes from 8.8.8.8: icmp_seq=12 ttl=116 time=14.9 ms
+[1673035580.168015] 64 bytes from 8.8.8.8: icmp_seq=13 ttl=116 time=17.8 ms
+[1673035581.168849] 64 bytes from 8.8.8.8: icmp_seq=14 ttl=116 time=17.2 ms
+[1673035582.167328] 64 bytes from 8.8.8.8: icmp_seq=15 ttl=116 time=14.1 ms
+[1673035583.167644] 64 bytes from 8.8.8.8: icmp_seq=16 ttl=116 time=13.5 ms
+[1673035584.169505] 64 bytes from 8.8.8.8: icmp_seq=17 ttl=116 time=14.3 ms
+[1673035585.168788] 64 bytes from 8.8.8.8: icmp_seq=18 ttl=116 time=12.7 ms
+[1673035586.171074] 64 bytes from 8.8.8.8: icmp_seq=19 ttl=116 time=13.0 ms
+
+--- 8.8.8.8 ping statistics ---
+20 packets transmitted, 19 received, 5% packet loss, time 19025ms
+rtt min/avg/max/mdev = 12.707/15.230/19.030/1.806 ms
