@@ -38,7 +38,6 @@ source ~/.nvm/nvm.sh;
 time nvm install --lts;
 time nvm use --lts;
 time npm install --global @vite/cli yarn;
-time yarn run ng version  >> README.markdown 2>&1;
 time yarn  >> README.markdown 2>&1;
 echo "\`\`\`"  >> README.markdown 2>&1;
 ping -A -D -c 20 -v 8.8.8.8 >> ping.txt 2>&1;
