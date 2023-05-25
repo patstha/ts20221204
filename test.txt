@@ -21401,3 +21401,91 @@ All files        |   40.22 |        0 |       0 |   40.22 |
  main.ts         |   18.64 |      100 |       0 |   18.64 | 6-42,49-59                              
  mozillavideo.ts |      50 |        0 |       0 |      50 | ...70,73-76,83-85,89-98,101-102,105-107 
 -----------------|---------|----------|---------|---------|-----------------------------------------
+
+ RUN  v0.25.7 /home/kushal/src/html/vite3/ts20221204
+      Coverage enabled with c8
+
+ ✓ src/hello-types.test.ts  (1 test) 7ms
+ ❯ src/main.test.ts  (0 test)
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/main.test.ts [ src/main.test.ts ]
+TypeError: Cannot set properties of null (setting 'controls')
+ ❯ src/mozillavideo.ts:9:11
+      7|     const videoControls = document.getElementById('video-controls') as…
+      8|     // Hide the default controls
+      9|     video.controls = false;
+       |           ^
+     10| 
+     11|     // Display the user defined video controls
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+  Snapshots  1 obsolete
+             ↳ src/hello-types.test.ts
+               · suite name > snapshot 1
+
+ Test Files  1 failed | 1 passed (2)
+      Tests  1 passed (1)
+   Start at  06:17:43
+   Duration  1.47s (transform 427ms, setup 1ms, collect 24ms, tests 7ms)
+
+⎯⎯⎯⎯⎯⎯ Unhandled Errors ⎯⎯⎯⎯⎯⎯
+
+Vitest caught 3 unhandled errors during the test run.
+This might cause false positive tests. Resolve unhandled errors to make sure your tests are not affected.
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+TypeError: Cannot set properties of null (setting 'controls')
+ ❯ src/mozillavideo.ts:9:11
+      7|     const videoControls = document.getElementById('video-controls') as…
+      8|     // Hide the default controls
+      9|     video.controls = false;
+       |           ^
+     10| 
+     11|     // Display the user defined video controls
+ ❯ VitestRunner.directRequest node_modules/vitest/dist/chunk-vite-node-source-map.2b1f492a.js:310:5
+
+
+
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+TypeError: Cannot set properties of null (setting 'controls')
+ ❯ src/mozillavideo.ts:9:11
+      7|     const videoControls = document.getElementById('video-controls') as…
+      8|     // Hide the default controls
+      9|     video.controls = false;
+       |           ^
+     10| 
+     11|     // Display the user defined video controls
+ ❯ VitestRunner.directRequest node_modules/vitest/dist/chunk-vite-node-source-map.2b1f492a.js:310:5
+
+
+
+
+⎯⎯⎯⎯ Unhandled Rejection ⎯⎯⎯⎯⎯
+TypeError: Cannot set properties of null (setting 'controls')
+ ❯ src/mozillavideo.ts:9:11
+      7|     const videoControls = document.getElementById('video-controls') as…
+      8|     // Hide the default controls
+      9|     video.controls = false;
+       |           ^
+     10| 
+     11|     // Display the user defined video controls
+ ❯ VitestRunner.directRequest node_modules/vitest/dist/chunk-vite-node-source-map.2b1f492a.js:310:5
+
+
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯
+ % Coverage report from c8
+-----------------|---------|----------|---------|---------|-----------------------------------------
+File             | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s                       
+-----------------|---------|----------|---------|---------|-----------------------------------------
+All files        |   40.22 |        0 |       0 |   40.22 |                                         
+ hello-types.ts  |     100 |      100 |     100 |     100 |                                         
+ main.ts         |   18.64 |      100 |       0 |   18.64 | 6-42,49-59                              
+ mozillavideo.ts |      50 |        0 |       0 |      50 | ...70,73-76,83-85,89-98,101-102,105-107 
+-----------------|---------|----------|---------|---------|-----------------------------------------
