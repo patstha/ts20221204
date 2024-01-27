@@ -14,3 +14,8 @@ System Storage
 334M	.
 ```
 ```bash
+yarn install v1.22.21
+[1/4] Resolving packages...
+success Already up-to-date.
+Done in 0.10s.
+```
