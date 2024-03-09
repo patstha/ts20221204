@@ -192,3 +192,31 @@ PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
 --- 8.8.8.8 ping statistics ---
 20 packets transmitted, 20 received, 0% packet loss, time 881ms
 rtt min/avg/max/mdev = 37.900/49.623/61.154/5.918 ms, pipe 2, ipg/ewma 46.393/52.507 ms
+ping: sock4.fd: 3 (socktype: SOCK_DGRAM), sock6.fd: 4 (socktype: SOCK_DGRAM), hints.ai_family: AF_UNSPEC
+
+ai->ai_family: AF_INET, ai->ai_canonname: '8.8.8.8'
+PING 8.8.8.8 (8.8.8.8) 56(84) bytes of data.
+[1709997050.339968] 64 bytes from 8.8.8.8: icmp_seq=1 ttl=112 time=66.1 ms
+[1709997051.315942] 64 bytes from 8.8.8.8: icmp_seq=2 ttl=112 time=40.3 ms
+[1709997052.336584] 64 bytes from 8.8.8.8: icmp_seq=3 ttl=112 time=59.3 ms
+[1709997053.346583] 64 bytes from 8.8.8.8: icmp_seq=4 ttl=112 time=67.0 ms
+[1709997054.316562] 64 bytes from 8.8.8.8: icmp_seq=5 ttl=112 time=35.0 ms
+[1709997055.341655] 64 bytes from 8.8.8.8: icmp_seq=6 ttl=112 time=58.1 ms
+[1709997056.355597] 64 bytes from 8.8.8.8: icmp_seq=7 ttl=112 time=70.0 ms
+[1709997057.328081] 64 bytes from 8.8.8.8: icmp_seq=8 ttl=112 time=42.2 ms
+[1709997058.348958] 64 bytes from 8.8.8.8: icmp_seq=9 ttl=112 time=61.2 ms
+[1709997059.322587] 64 bytes from 8.8.8.8: icmp_seq=10 ttl=112 time=32.9 ms
+[1709997060.321644] 64 bytes from 8.8.8.8: icmp_seq=11 ttl=112 time=30.4 ms
+[1709997061.364927] 64 bytes from 8.8.8.8: icmp_seq=12 ttl=112 time=71.7 ms
+[1709997062.336372] 64 bytes from 8.8.8.8: icmp_seq=13 ttl=112 time=41.8 ms
+[1709997063.338885] 64 bytes from 8.8.8.8: icmp_seq=14 ttl=112 time=43.9 ms
+[1709997064.371699] 64 bytes from 8.8.8.8: icmp_seq=15 ttl=112 time=75.7 ms
+[1709997065.335032] 64 bytes from 8.8.8.8: icmp_seq=16 ttl=112 time=39.1 ms
+[1709997066.345697] 64 bytes from 8.8.8.8: icmp_seq=17 ttl=112 time=48.0 ms
+[1709997067.364179] 64 bytes from 8.8.8.8: icmp_seq=18 ttl=112 time=64.8 ms
+[1709997068.329389] 64 bytes from 8.8.8.8: icmp_seq=19 ttl=112 time=29.5 ms
+[1709997069.353982] 64 bytes from 8.8.8.8: icmp_seq=20 ttl=112 time=51.9 ms
+
+--- 8.8.8.8 ping statistics ---
+20 packets transmitted, 20 received, 0% packet loss, time 19028ms
+rtt min/avg/max/mdev = 29.543/51.452/75.698/14.561 ms
